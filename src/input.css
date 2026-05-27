@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import url("https://googleapis.com");
+
+@theme {
+  --font-playwrite: "Playwirte US Modern", cursive;
+  --font-iowan-old: "Iowan Old Style";
+  --font-playball: "Playball", cursive;
+  --font-inter: "Inter";
+}
