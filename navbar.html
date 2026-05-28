@@ -6,16 +6,219 @@
     <link rel="stylesheet" href="dist/output.css" />
     <title>Navbar</title>
   </head>
-  <body class="bg-slate-700 h-screen">
-    <header>
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+  <body
+    class="m-0 min-h-screen flex flex-col bg-white text-slate-900 antialiased font-inter"
+  >
+    <header class="relative w-full h-screen overflow-hidden">
+      <img
+        class="absolute inset-0 w-full h-full object-cover object-center -z-10"
+        src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=1740&auto=format&fit=max&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Background Image"
+      />
+
+      <!-- Navbar -->
+      <nav
+        class="w-auto mx-64 mt-8 flex justify-between items-center backdrop-blur-2xl p-4 rounded-4xl"
+      >
+        <!-- Logo & Name Wrapper -->
+        <div class="flex justify-center items-center gap-4">
+          <!-- LOGO -->
+          <svg
+            class="text-black"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.476 2.001H3.526C3.12189 2.00126 2.73441 2.16191 2.44866 2.44766C2.16291 2.73341 2.00226 3.12089 2.002 3.525V3.98H2.013C4.05053 3.68864 6.12821 4.03958 7.957 4.984C9.44867 5.69855 11.0664 6.11242 12.718 6.202C15.5213 6.31235 18.2833 5.49863 20.579 3.886C21.041 3.562 21.028 3.596 20.345 4.344C18.7299 6.22323 16.656 7.65256 14.325 8.493C11.858 9.246 9.656 8.876 5.631 7.035C4.66634 6.54619 3.66536 6.13263 2.637 5.798C2.42953 5.72898 2.2173 5.67517 2.002 5.637V9.709H2.013C4.05053 9.41764 6.12821 9.76858 7.957 10.713C9.44875 11.4272 11.0665 11.8407 12.718 11.93C15.5212 12.0406 18.2832 11.2273 20.579 9.615C21.041 9.291 21.028 9.324 20.345 10.072C18.73 11.9516 16.6561 13.3813 14.325 14.222C11.858 14.974 9.656 14.605 5.631 12.764C4.6656 12.2761 3.66396 11.8636 2.635 11.53C2.42753 11.461 2.2153 11.4072 2 11.369V15.589H2.011C4.04832 15.297 6.12599 15.6473 7.955 16.591C9.44546 17.3079 11.0634 17.7219 12.715 17.809C15.5187 17.9196 18.281 17.1058 20.577 15.493C21.039 15.169 21.025 15.204 20.342 15.951C18.7272 17.8301 16.6537 19.2594 14.323 20.1C11.855 20.853 9.654 20.484 5.629 18.642C4.66493 18.154 3.66462 17.7411 2.637 17.407C2.42955 17.3376 2.21732 17.2835 2.002 17.245V20.475C2.00226 20.8791 2.16291 21.2666 2.44866 21.5523C2.73441 21.8381 3.12189 21.9987 3.526 21.999H20.476C20.8801 21.9987 21.2676 21.8381 21.5533 21.5523C21.8391 21.2666 21.9997 20.8791 22 20.475V3.525C21.9997 3.12089 21.8391 2.73341 21.5533 2.44766C21.2676 2.16191 20.8801 2.00126 20.476 2.001Z"
+            />
+          </svg>
+          <!-- Name -->
+          <h2 class="text-black text-3xl text-center tracking-wider">
+            Eastute
+          </h2>
+        </div>
+
+        <!-- Nav Links Wrapper -->
+        <ul
+          class="flex items-center justify-center gap-16 text-lg tracking-wide"
+        >
+          <li class="">Home</li>
+          <li class="">Type</li>
+          <li class="">Services</li>
+          <li class="">About Us</li>
         </ul>
+
+        <!-- Lang and CTA Wrapper -->
+        <div class="flex items-center justify-center gap-8">
+          <!-- Lang Wrapper -->
+          <div class="flex items-center justify-center gap-2">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_37_6)">
+                <mask
+                  id="mask0_37_6"
+                  style="mask-type: luminance"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                    fill="white"
+                  />
+                </mask>
+                <g mask="url(#mask0_37_6)">
+                  <path
+                    d="M0 0L0.25 0.6875L0 1.40625V2.125L1 3.8125L0 5.5V6.5L1 8L0 9.5V10.5L1 12.1875L0 13.875V16L0.6875 15.75L1.40625 16H2.125L3.8125 15L5.5 16H6.5L8 15L9.5 16H10.5L12.1875 15L13.875 16H16L15.75 15.3125L16 14.5938V13.875L15 12.1875L16 10.5V9.5L15 8L16 6.5V5.5L15 3.8125L16 2.125V0L15.3125 0.25L14.5938 0H13.875L12.1875 1L10.5 0H9.5L8 1L6.5 0H5.5L3.8125 1L2.125 0H0Z"
+                    fill="#EEEEEE"
+                  />
+                  <path
+                    d="M10.5 0V3.375L13.875 0H10.5ZM16 2.125L12.625 5.5H16V2.125ZM0 5.5H3.375L0 2.125V5.5ZM2.125 0L5.5 3.375V0H2.125ZM5.5 16V12.625L2.125 16H5.5ZM0 13.875L3.375 10.5H0V13.875ZM16 10.5H12.625L16 13.875V10.5ZM13.875 16L10.5 12.625V16H13.875Z"
+                    fill="#0052B4"
+                  />
+                  <path
+                    d="M0 0V1.40625L4.09375 5.5H5.5L0 0ZM6.5 0V6.5H0V9.5H6.5V16H9.5V9.5H16V6.5H9.5V0H6.5ZM14.5938 0L10.5 4.09375V5.5L16 0H14.5938ZM5.5 10.5L0 16H1.40625L5.5 11.9062V10.5ZM10.5 10.5L16 16V14.5938L11.9062 10.5H10.5Z"
+                    fill="#D80027"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_37_6">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="text-md">En</span>
+            <svg
+              class="text-black"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.854 10.561L11.708 6.708L11.001 6L7.854 9.147L4.708 6L4 6.708L7.854 10.561Z"
+              />
+            </svg>
+          </div>
+
+          <!-- CTA -->
+          <button
+            class="px-4 py-3 bg-black text-white tracking-wider font-iowan-old text-md"
+          >
+            Contact Us
+          </button>
+        </div>
       </nav>
+
+      <!-- Hero Section -->
+      <section class="max-w-[40%] ml-64 mt-16 font-inter">
+        <h1 class="text-[80px] font-bold leading-none mb-8">
+          Easiest way to find your dream place
+        </h1>
+        <p class="text-2xl opacity-85 w-[80%]">
+          This is where you can find a dream place for you of various types, all
+          over the world at affordable prices.
+        </p>
+      </section>
+
+      <!-- Search Section -->
+      <section class="max-w-[50%] ml-64 mt-8">
+        <!-- Buy and Rent Filter Buttons -->
+        <div class="flex items-center justify-start">
+          <button class="bg-white/50 px-6 py-4 text-lg">Buy</button>
+          <button class="bg-white px-6 py-4 text-lg border-b border-slate-400">
+            Rent
+          </button>
+        </div>
+
+        <!-- Search Filters -->
+        <div class="flex items-center justify-between bg-white px-6 py-6">
+          <div class="flex items-center justify-center">
+            <!-- Location Selection -->
+            <div
+              class="border-r border-slate-400 flex flex-col items-start justify-center gap-4 pr-12"
+            >
+              <h3 class="text-lg font-semibold">Location</h3>
+              <p class="text-md text-gray-600">Long Beach, California</p>
+            </div>
+
+            <!-- Start Date Selection -->
+            <div
+              class="border-r border-slate-400 flex flex-col items-start justify-center gap-4 pr-12 pl-8"
+            >
+              <h3 class="text-lg font-semibold">Start</h3>
+              <p class="text-md text-gray-600">Dec 16, 10:30 PM</p>
+            </div>
+
+            <!-- End Date Selection -->
+            <div class="flex flex-col items-start justify-center gap-4 pl-8">
+              <h3 class="text-lg font-semibold">End</h3>
+              <p class="text-md text-gray-600">Dec 20, 10:30 PM</p>
+            </div>
+          </div>
+
+          <!-- Search Button -->
+          <button class="bg-black p-3">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.9644 28L17.7915 18.8277C17.0591 19.4517 16.2168 19.9346 15.2646 20.2764C14.3125 20.6181 13.3555 20.789 12.3936 20.789C10.0518 20.789 8.06738 19.9756 6.44043 18.3487C4.81348 16.7209 4 14.7362 4 12.3945C4 10.0529 4.81348 8.0686 6.44043 6.44175C8.06738 4.81489 10.0518 4.00098 12.3936 4C14.7354 3.99902 16.7202 4.81294 18.3481 6.44175C19.9761 8.07055 20.7896 10.0548 20.7886 12.3945C20.7886 13.412 20.6084 14.3968 20.248 15.3489C19.8877 16.301 19.4141 17.1154 18.8271 17.7921L28 26.963L26.9644 28ZM12.395 19.3228C14.3384 19.3228 15.979 18.6539 17.3169 17.3161C18.6548 15.9783 19.3237 14.3373 19.3237 12.393C19.3237 10.4488 18.6548 8.8083 17.3169 7.47147C15.979 6.13464 14.3384 5.46573 12.395 5.46476C10.4517 5.46378 8.81055 6.13268 7.47168 7.47147C6.13281 8.81025 5.46387 10.4508 5.46484 12.393C5.46582 14.3353 6.13477 15.9758 7.47168 17.3146C8.80859 18.6534 10.4492 19.3223 12.3936 19.3213"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section
+        class="max-w-[40%] ml-64 mt-6 flex justify-start items-center gap-24 pl-4"
+      >
+        <!-- Award Winning -->
+        <div class="w-24 flex flex-col items-center justify-center gap-4">
+          <h4 class="text-6xl font-bold font-inter">200</h4>
+          <p class="text-2xl font-medium text-gray-600 text-center">
+            Award Winning
+          </p>
+        </div>
+        <!-- Happy Customers -->
+        <div class="w-24 flex flex-col items-center justify-center gap-4">
+          <h4 class="text-6xl font-bold font-inter">500+</h4>
+          <p class="text-2xl font-medium text-gray-600 text-center">
+            Happy Customers
+          </p>
+        </div>
+        <!-- Property Ready -->
+        <div class="w-24 flex flex-col items-center justify-center gap-4">
+          <h4 class="text-6xl font-bold font-inter">100+</h4>
+          <p class="text-2xl font-medium text-gray-600 text-center">
+            Property Ready
+          </p>
+        </div>
+      </section>
     </header>
+
+    <main></main>
+
+    <footer></footer>
   </body>
 </html>
