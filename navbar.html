@@ -12,13 +12,13 @@
     <header class="relative w-full h-screen overflow-hidden">
       <img
         class="absolute inset-0 w-full h-full object-cover object-center -z-10"
-        src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=1740&auto=format&fit=max&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://images.unsplash.com/photo-1547104984-924116a9c464?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Background Image"
       />
 
       <!-- Navbar -->
       <nav
-        class="w-auto mx-64 mt-8 flex justify-between items-center backdrop-blur-2xl p-4 rounded-4xl"
+        class="w-auto mx-64 mt-8 flex justify-between items-center border-b border-gray-800/50 backdrop-blur-md p-4 rounded-4xl"
       >
         <!-- Logo & Name Wrapper -->
         <div class="flex justify-center items-center gap-4">
@@ -45,10 +45,10 @@
         <ul
           class="flex items-center justify-center gap-16 text-lg tracking-wide"
         >
-          <li class="">Home</li>
-          <li class="">Type</li>
-          <li class="">Services</li>
-          <li class="">About Us</li>
+          <a href=""><li class="border-b border-slate-600/80 p-2">Home</li></a>
+          <a href=""><li class="">Type</li></a>
+          <a href=""><li class="">Services</li></a>
+          <a href=""><li class="">About Us</li></a>
         </ul>
 
         <!-- Lang and CTA Wrapper -->
@@ -117,7 +117,7 @@
 
           <!-- CTA -->
           <button
-            class="px-4 py-3 bg-black text-white tracking-wider font-iowan-old text-md"
+            class="px-4 py-3 bg-black text-white tracking-wider font-iowan-old text-md rounded-4xl hover:bg-white hover:text-black transition-colors ease-in-out duration-300 cursor-pointer"
           >
             Contact Us
           </button>
@@ -146,7 +146,9 @@
         </div>
 
         <!-- Search Filters -->
-        <div class="flex items-center justify-between bg-white px-6 py-6">
+        <div
+          class="flex items-center justify-between bg-white px-6 py-6 rounded-b-4xl rounded-tr-4xl"
+        >
           <div class="flex items-center justify-center">
             <!-- Location Selection -->
             <div
@@ -172,7 +174,7 @@
           </div>
 
           <!-- Search Button -->
-          <button class="bg-black p-3">
+          <button class="bg-black p-3 rounded-full">
             <svg
               width="32"
               height="32"
